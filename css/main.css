@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600&display=swap');
+
 
 .Rectangle {
     width: 1440px;
@@ -12,27 +13,24 @@ header .logo{
         height: 44px;
         margin-top: 13px;
         margin-left: 24px;
-        
-
+        margin-right: 733px;
 }
 header {
         display: flex;
-        justify-content:  flex-end;
-        order: 1;
-            
+        justify-content:  flex-end;                  
 }
 .home {
         margin-left: 58px;
         width: 33px;
         height: 20px;
-        font-family: Titillium Web;
+        font-family: 'Titillium Web', sans-serif, '600';
         font-size: 12px;
         font-weight: 600;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.67;
         letter-spacing: normal;
-        color: #ffffff;
+        color: #ffffff;       
 }
 .courses {
         margin-left: 58px;
@@ -88,10 +86,9 @@ nav ul li {
 .Oval {
         width: 35px;
         height: 35px;
-        background-color: #ffffff;
-
-}       
-
+        background-color: #ffffff;    
+        
+}
 button {
         border-radius: 50%;
         margin-top: 18px;
@@ -99,73 +96,78 @@ button {
         margin-right: 22px;
         
 }
+/*End css header*/
 
-
-
-        
-
-
-
-      
+     
 .Mask {
         width: 1440px;
         height: 733px;
         background-color: rgba(91, 157, 227, 0.08);
-      }
-
-section img {
-        position: relative;
-        width: 514px;
-        height: 364px;
-        margin-top: 243px;
-        margin-left: 445px;
 }
-section .Rectangle {
-        width: 350px;
-        height: 60px;
-        border-radius: 30px;
-        box-shadow: 0 10px 20px 0 rgba(25, 71, 128, 0.2);
-        background-color: #5b9de3;
-        margin-bottom: 679px;
-        margin-left: 545px;
-        margin-top: -64px;
-
-}
-.FIND-OUT-MORE {
+/*heading and typwriting heading. "Next level training*/
+.Container  {
         position: relative;
-        padding: 0;
         display: block;
-        margin-bottom: 699px;
-        margin-bottom: 618px;
-        width: 204px;
-        height: 19px;
-        font-family: Titillium Web;
-        font-size: 18px;
-        font-weight: 600;
+        margin-left: 313px;
+        padding-top: 60px;
+        width: 764px;
+        height: 224px;
+}
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+h1 {
+        font-family: 'Titillium Web', sans-serif, '400';
+        font-size: 56px;
+        font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
-        color: #ffffff;
-        margin-left: 73px;
-        margin-top: 16px;
-       
-        
-        
+        color: var(--charcoal-gray);                       
 }
-section .Rectangle :hover {
-        box-sizing: content-box;
-        color: #5b9de3;
-        background-color: #ffffff;
-
-        
+h2  {
+        font-family: 'Titillium Web', sans-serif, '400';
+        font-size: 56px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #4a90e2;               
+}                    
+ .Next-level-training .cursor {
+        display: inline-block;
+        width: 5px;
+        height: fit-content;
+        background-color: #4a90e2;
+        margin-left: 0.1rem;
+        animation: blink 1s infinite;
 }
-
-section p .Take-your-tech-caree {
+@keyframes blink {
+        0% {background-color: #4a90e2;}
+        49% {background-color: #4a90e2;}
+        50%{background-color: transparent;}
+        99%{background-color: transparent;}
+        100%{background-color: #4a90e2;}
+}                               
+/*front page maven image*/
+section img {
+        position: relative;
+        width: 514px;
+        height: 364px;
+        margin-left: 243px;
+        margin-left: 445px;
+}
+/*line text*/
+ .row {
+        position: relative;
+        display: block;
+        margin-left: 285px;
+        margin-bottom: 148px;
         width: 882px;
         height: 78px;
-        font-family: Titillium web;
+        font-family: 'Titillium Web', sans-serif, '400';
         font-size: 18px;
         font-weight: 600;
         font-stretch: normal;
@@ -175,5 +177,18 @@ section p .Take-your-tech-caree {
         text-align: center;
         color: var(--charcoal-grey);
 }
-                        
+/*button*/
+
+       
+        
+        
+/*End section 1 Mask*/    
+
+
+.container{
+        width: 1440px;
+        height: 681px;
+        background-color: #ffffff;
+        
+}
 
