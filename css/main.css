@@ -17,7 +17,7 @@ header .logo{
 }
 header {
         display: flex;
-        justify-content:  flex-end;                  
+        justify-content:  flex-e;                  
 }
 .home {
         margin-left: 58px;
@@ -30,13 +30,14 @@ header {
         font-style: normal;
         line-height: 1.67;
         letter-spacing: normal;
-        color: #ffffff;       
+        color: #ffffff;
+          
 }
 .courses {
         margin-left: 58px;
         width: 50px;
         height: 20px;
-        font-family: Titillium Web;
+        font-family: 'Titillium Web', sans-serif, '600';
         font-size: 12px;
         font-weight: 600;
         font-stretch: normal;
@@ -49,7 +50,7 @@ header {
         margin-left: 58px;
         width: 66px;
         height: 20px;
-        font-family: Titillium Web;
+        font-family: 'Titillium Web', sans-serif, '600';
         font-size: 12px;
         font-weight: 600;
         font-stretch: normal;
@@ -63,7 +64,7 @@ header {
         margin-left: 63px;
         width: 28px;
         height: 20px;
-        font-family: Titillium Web;
+        font-family: 'Titillium Web', sans-serif, '600';
         font-size: 12px;
         font-weight: 600;
         font-stretch: normal;
@@ -96,25 +97,30 @@ button {
         margin-right: 22px;
         
 }
+
+
 /*End css header*/
 
-     
-.Mask {
+ /*Cover Page*/    
+.Cover-Page {
         width: 1440px;
         height: 733px;
         background-color: rgba(91, 157, 227, 0.08);
 }
+.Cover-Page {
+        display: list-item;
+        justify-content: space-evenly;
+}
 /*heading and typwriting heading. "Next level training*/
-.Container  {
+.Next-level {
         position: relative;
         display: block;
         margin-left: 313px;
-        padding-top: 60px;
+        padding-top: 40px;
         width: 764px;
-        height: 224px;
+        height: 224px; 
 }
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
-h1 {
+.Next-level-Training-in {
         font-family: 'Titillium Web', sans-serif, '400';
         font-size: 56px;
         font-weight: normal;
@@ -125,7 +131,8 @@ h1 {
         text-align: center;
         color: var(--charcoal-gray);                       
 }
-h2  {
+.type-text  {
+        padding-bottom: 100px;
         font-family: 'Titillium Web', sans-serif, '400';
         font-size: 56px;
         font-weight: normal;
@@ -135,14 +142,15 @@ h2  {
         letter-spacing: normal;
         text-align: center;
         color: #4a90e2;               
-}                    
- .Next-level-training .cursor {
+}                  
+.type-text .cursor {
         display: inline-block;
         width: 5px;
-        height: fit-content;
+        height: 70px;
+        padding-top: -40px;
         background-color: #4a90e2;
         margin-left: 0.1rem;
-        animation: blink 1s infinite;
+        animation: blink 0.8s infinite;
 }
 @keyframes blink {
         0% {background-color: #4a90e2;}
@@ -152,21 +160,17 @@ h2  {
         100%{background-color: #4a90e2;}
 }                               
 /*front page maven image*/
- .front-image {
+.front-image {
         position: relative;
         width: 514px;
         height: 364px;
-        margin-left: 243px;
+        margin-top: -39px;
         margin-left: 445px;
-}
+ }
 /*line text*/
- .row {
-        position: relative;
-        display: inline-block;
+.Take-your-tech-career {
         margin-left: 285px;
-        margin-bottom: 148px;
         width: 882px;
-        height: 78px;
         font-family: 'Titillium Web', sans-serif, '400';
         font-size: 18px;
         font-weight: 600;
@@ -178,30 +182,53 @@ h2  {
         color: var(--charcoal-grey);
 }
 /*button*/
- .Find-out-more  {
-        
-        margin-bottom: -80px;
-        
-       
-        
+.Cover-Page button {
+        margin-bottom: -64px;
+        margin-left: 545px;
+        width: 350px;
+        height: 60px;
+        border-radius: 30px;
+        box-shadow: 0 10px 20px 0 rgba(25, 71, 128, 0.2);
+        background-color: var(--dark-sky-blue);
+        background-color: #5b9de3;
 }
-       
-        
-        
-/*End section 1 Mask*/    
+.FIND-OUT-MORE {
+        width: 204px;
+        height: 19px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 18px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+}
+.Cover-Page button:hover {
+        cursor: pointer;
+        border: solid 2px #60a0e3;
+        background-color: #ffffff;
+        color: #5b9de3;
+        opacity: 0.8;
+}         
+/*End Caver page*/    
 
-
+/*Why Maven Academy section*/
 .section1 {
         width: 1440px;
         height: 681px;
-        background-color: #ffffff;
-        
+        background-color: #ffffff;      
 }
-/*article*/
+.section1  {
+        display: flex;
+        justify-content:  flex-end;  
+}
+/*article 'Why Maven Academy'*/
 .Why-Maven-Academy {
         position: relative;
-        margin-right: 93px;
-        margin-top: 107px;
+        margin-left: -3px;
+        padding-top:107px;
         width: 518px;
         height: 153px;
         font-family: 'Titillium Web', sans-serif, '600';
@@ -213,12 +240,12 @@ h2  {
         letter-spacing: normal;
         color: var(--charcoal-grey);
 }
-
-.statment {
+.mission-statment {
         position: relative;
-
+        display: block;
         margin-right: 90px;
-        margin-bottom: 228px;
+        margin-top: 53px;
+        margin-bottom: -163px;
         width: 514px;
         height: 290px;
         font-family: 'Titillium Web', sans-serif, '400';
@@ -229,8 +256,39 @@ h2  {
         line-height: 1.5;
         letter-spacing: normal;
         color: #000000;
-      }
-/*Aside*/      
+}
+/*button 'read more'*/
+.mission-statment button {
+        position: relative;
+        display: block;
+        margin-top: 30px;
+        margin-left: -8px;
+        width: 146px;
+        height: 40px;
+        border-radius: 22.5px;
+        border: solid 2px #60a0e3;
+}
+.Read {
+        width: 144px;
+        height: 18px;
+        font-family: 'Titillium Web', sans-serif, '400';
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--dark-sky-blue);
+        color:  #5b9de3;
+}
+.mission-statment button:hover {
+        cursor: pointer;
+        background-color: #4d96ee;
+        color: #ffffff;
+        opacity: 0.8;         
+}
+/*Aside 'paragraphs, headings and icon images*/      
 .Row {
         margin-top: 82px;
         width: 745px;
@@ -239,16 +297,307 @@ h2  {
         box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2);
         background-color: #ffffff;
 }
-.section1  {
-        display: flex;
-        justify-content:  flex-end;  
+.Row .background-img {
+        display: block;
+        width: 75px;
+        height: 75px;
+        background-color: #5b9de3;
+        border-radius: 8px;
+}
+.changer-img {
+        position: relative;
+        display: block;
+        margin-top: 18px;
+        margin-left: 14px;
+        width: 48px;
+        height: 48px;   
+}
+.boosters-img {
+        position: relative;
+        display: block;
+        margin-top: 12px;
+        margin-left: 15px;
+        width: 48px;
+        height: 48px;   
+}
+.graduates-img {
+        position: relative;
+        display: block;
+        margin-top: 16px;
+        margin-left: 19px;
+        width: 47px;
+        height: 48px;   
+}
+
+/*headings*/
+.Learn-by-creating {
+        width: 169px;
+        height: 24px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.09;
+        letter-spacing: normal;
+        color: var(--charcoal-grey);
+}
+.Expert-coaching {
+        width: 152px;
+        height: 24px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.09;
+        letter-spacing: normal;
+        color: #333d43;
+}
+.Internship-Programme {
+        width: 216px;
+        height: 24px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.09;
+        letter-spacing: normal;
+        color: var(--charcoal-grey);
+}
+/*Paragraphs*/
+.Master-the-art-of-co {
+        width: 484px;
+        height: 66px;
+        font-family: 'Titillium Web', sans-serif, '400';
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        color: #000000;
+}
+.Adopt-the-best-pract {
+        width: 457px;
+        height: 90px;
+        font-family: 'Titillium Web', sans-serif, '400';
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        color: #000000;
+}
+.Dont-struggle-with {
+        width: 457px;
+        height: 54px;
+        font-family: 'Titillium Web', sans-serif, '400';
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        color: #000000;
+}
+.Dont-struggle-with .text-style-1 {
+        color: #468ee5;
+}
+/*images*/       
+.img-and-Feed-0 {
+        display: inline-flex;
+        justify-content: first baseline;
+        margin-left: 57px;
+        margin-top: 73px;
+}
+.img-and-Feed-1 {
+        display: inline-flex;
+        justify-content: first baseline;
+        margin-left: 57px;
+        margin-top: 16px;
+        
+} 
+.img-and-Feed-2 {
+        display: inline-flex;
+        justify-content: first baseline;
+        margin-left: 51px;
+        margin-top: 33px;       
+}
+.Feed {
+        margin-left: 32px;
+}
+.Feed-b {
+        margin-left: 38px;
 }
 /*end class == section1\section*/    
 
-.Cards { 
+.Carts { 
         width: 1440px;
         height: 808px;
         background-color: rgba(91, 157, 227, 0.08);
+}.Outline {
+        position: relative;
+        display: block;
+        margin-left: 626px;
+        margin-top: 72px;
+        padding-top: 72px;
+        padding-bottom: 23px;
+        width: 195px;
+        height: 36px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 36px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--charcoal-grey);
+}
+.Immersive-training-p {
+        position: relative;
+        display: block;
+        margin-top: 56px;
+        align-content: center;
+        width: 1440px;
+        height: 56px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        text-align: center;
+        color: #4f5559;
+      }
+
+.Our-Courses {
+        display: flex;
+        justify-content:  first baseline;
+        margin-top: 32px;
+        
+
+}
+.Full-Stack {
+        position: relative;
+        display: block;
+        
+        margin-left: 99px;
+        width: 372px;
+        height: 489px;
+        box-shadow: 0 5px 20px 0 rgba(25, 71, 128, 0.2);
+        background-color: #ffffff;
+}        
+              
+.Front-End {
+        position: relative;
+        display: block;
+        margin-left: 72px;
+        width: 372px;
+        height: 489px;
+        box-shadow: 0 5px 20px 0 rgba(25, 71, 128, 0.2);
+        background-color: #ffffff;
+}
+              
+.Java-Spring {
+        position: relative;
+        display: block;
+        margin-left: 65px;
+        width: 372px;
+        height: 489px;
+        box-shadow: 0 5px 20px 0 rgba(25, 71, 128, 0.2);
+        background-color: #ffffff;        
+}
+
+.Full-Stack img {
+        position: relative;
+        display: block;
+        width: 237px;
+        height: 237px;
+}
+
+.Front-End img {
+        width: 233px;
+        height: 233px;
+}
+.Java-Spring img {
+        width: 225px;
+        height: 225px;
+}
+
+.price {
+        position: relative;
+        display: block;
+        margin-left: 104px;
+        width: 208px;
+        height: 26px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.9;
+        letter-spacing: normal;
+        color: #3a9aef;
+}
+
+.View-course-detail {
+        position: relative;
+        display: block;
+        margin-left: 133px;
+        width: 111px;
+        height: 18px;
+        font-family: 'Titillium Web', sans-serif, '400';
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        color: #4a4a4a;
+}
+/*buttons add to enquiry buttobs*/
+.Full-Stack button {
+        width: 308px;
+        height: 40px;
+        border-radius: 22.5px;
+        border: solid 2px #60a0e3;
+}
+.Front-End button {
+        width: 308px;
+        height: 40px;
+        border-radius: 22.5px;
+        border: solid 2px #60a0e3;
+}
+.Java-Spring button {
+        width: 308px;
+        height: 40px;
+        border-radius: 22.5px;
+        border: solid 2px #60a0e3;
+}
+.Add-to-enquiry {
+        width: 297px;
+        height: 18px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: center;
+        color: #4d96ee;
+}
+.Java-Spring .Add :hover 
+.Full-Stack .Add :hover  
+.Front-End .Add :hover {
+        cursor: pointer;
+        background-color: #4d96ee;
+        color: #ffffff;     
 }
 /*end Cards section*/
 
@@ -257,3 +606,146 @@ h2  {
         height: 463px;
         background-color: #ffffff;
 }
+.Career-Services {
+        position: relative;
+        display: block;
+        margin-top: 83px;
+        margin-left: 154px;
+        width: 518px;
+        height: 51px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 50px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: var(--charcoal-grey);
+}
+.Hiring-statment {
+        position: relative;
+        display: block;
+        margin-top: 26px;
+        margin-left: 154px;
+        width: 1126px;
+        height: 56px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #707277;
+}
+.wrapper {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+}
+.item  {    
+        background-color: brown;
+        display: inline-flex;
+        justify-content:  flex-start; 
+        height: 100pxpx;
+        width: 180px;
+}
+
+.Services .Owl-carousel {
+        position: relative;
+        display: block;
+        margin-top: 1px;
+        margin-left: 93px;
+        width: 1240px;
+        height: 137px;
+        object-fit: contain;
+        display: inline-flex;
+        justify-content:  flex-start; 
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+        opacity: 0.2;       
+}     
+.active,
+.demo:hover {
+        opacity: 1;
+}
+
+.Services button {
+        position: relative;
+        display: block;
+        margin-top: 34px;
+        margin-left: 149px;
+        width: 146px;
+        height: 40px;
+        border-radius: 22.5px;
+        border: solid 2px #60a0e3;          
+}
+.find-out {
+        width: 144px;
+        height: 18px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #5b9de3 var(--dark-sky-blue);
+}
+/*End services images*/
+
+.Our-Student {
+        width: 1440px;
+        height: 673px;
+        background-color: #36414c;
+}
+.What-our-students {
+        position: relative;
+        display: block;
+        margin-top: 129px;
+        margin-right: 90px;
+        width: 428px;
+        height: 255px;
+        font-family: 'Titillium Web', sans-serif, '600';
+        font-size: 50px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+}
+.Kay-statment {
+        position: relative;
+        display: block;
+        margin-bottom: 118px;
+        margin-right: 90px;
+        width: 406px;
+        height: 204px;
+        font-family: 'Titillium Web', sans-serif, '400';
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #ffffff;
+}
+
+.Kay {
+        position: relative;
+        display: block;
+        margin-top: 118px;
+        width: 756px;
+        height: 452px;
+}  
+.Student  {
+        
+        display: flex;
+        justify-content:  center; 
+        
+        
+} 
+
